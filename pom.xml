@@ -4,7 +4,8 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>devops</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+ 	<version>0.0.4</version>
+ 
 	<packaging>war</packaging>
 
 	<name>devops</name>
@@ -41,7 +42,7 @@
 		<connection>scm:git:git@github.com:naif-alzubaidi/devops.git</connection>
 		<developerConnection>scm:git:git@github.com:naif-alzubaidi/devops.git</developerConnection>
 		<url>git@github.com:naif-alzubaidi/devops.git</url>
-		<tag>HEAD</tag>
+		<tag>0.0.4</tag>
 	</scm>
 
 	<dependencies>
@@ -84,6 +85,8 @@
 				<configuration>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
+					        <localCheckout>true</localCheckout>
+        <pushChanges>false</pushChanges>
 				</configuration>
 			</plugin>
 		</plugins>
